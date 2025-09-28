@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../anaconda_projects/ML"
+		},
+		{
+			"path": "../../../anaconda_projects"
+		}
+	],
+	"settings": {}
+}
