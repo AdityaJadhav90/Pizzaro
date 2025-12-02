@@ -82,25 +82,3 @@ Backend API: http://localhost:5000
 2. Host `dist/` on your static host of choice (Vercel, Netlify, etc.)
 3. Deploy the backend to your Node-friendly host (Render, Railway, etc.)
 4. Configure environment variables (Mongo URI, JWT secrets, etc.)
-
-## 🪄 Push to GitHub
-```bash
-# Verify status
-git status
-
-# Stage changes
-git add .
-
-# Commit
-git commit -m "Update README and project assets"
-
-# Add remote (first time only)
-git remote add origin https://github.com/<YOUR_USERNAME>/<REPO_NAME>.git
-
-# Push
-git push -u origin main
-```
-> Replace `<YOUR_USERNAME>` and `<REPO_NAME>` with your GitHub details. If `main` does not exist yet, `git branch -M main` before the push.
-
-## 📨 Need Help?
-Open an issue or reach out with screenshots/logs. Happy building! 🍕🚚
