@@ -27,7 +27,15 @@ function Card(props) {
 
   return (
     <div className="max-w-xs bg-white rounded-2xl shadow-md overflow-hidden p-4 m-10 border-spacing-1">
-      <img src={props.foodItem.image} alt={foodItem.name} className="w-full h-40 object-cover rounded-xl mb-4" />
+      <img 
+        src={props.foodItem.image} 
+        alt={foodItem.name} 
+        className="w-full h-40 object-cover rounded-xl mb-4" 
+        onError={(e) => {
+          console.log('Image failed to load:', props.foodItem.image);
+          e.target.style.display = 'none';
+        }}
+      />
       <h2 className="text-xl font-semibold mb-2">{props.foodItem.name}</h2>
       <p className="text-sm text-gray-600 mb-2">${props.foodItem.price}</p>
 
